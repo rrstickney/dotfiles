@@ -1,0 +1,82 @@
+[global_config]
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+[keybindings]
+[profiles]
+  [[default]]
+    allow_bold = False
+    icon_bell = False
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#aaaaaa"
+    show_titlebar = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+  [[Galaxy]]
+    icon_bell = False
+    background_color = "#1d2837"
+    cursor_bg_color = "#bbbbbb"
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    palette = "#000000:#f9555f:#21b089:#fef02a:#589df6:#944d95:#1f9ee7:#bbbbbb:#555555:#fa8c8f:#35bb9a:#ffff55:#589df6:#e75699:#3979bc:#ffffff"
+    use_system_font = False
+  [[tokyonight]]
+    icon_bell = False
+    background_color = "#1a1b26"
+    cursor_bg_color = "#c0caf5"
+    foreground_color = "#c0caf5"
+    show_titlebar = False
+    palette = "#15161e:#f7768e:#9ece6a:#e0af68:#7aa2f7:#bb9af7:#7dcfff:#a9b1d6:#414868:#f7768e:#9ece6a:#e0af68:#7aa2f7:#bb9af7:#7dcfff:#c0caf5"
+    use_system_font = False
+  [[SpaceGray Eighties Dull]]
+    allow_bold = False
+    icon_bell = False
+    background_color = "#222222"
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#bbbbbb"
+    foreground_color = "#c9c6bc"
+    show_titlebar = False
+    palette = "#15171c:#b24a56:#92b477:#c6735a:#7c8fa5:#a5789e:#80cdcb:#b3b8c3:#555555:#ec5f67:#89e986:#fec254:#5486c0:#bf83c1:#58c2c1:#ffffff"
+    use_system_font = False
+  [[SpaceGray Eighties]]
+    allow_bold = False
+    icon_bell = False
+    background_color = "#222222"
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#bbbbbb"
+    foreground_color = "#bdbaae"
+    show_titlebar = False
+    palette = "#15171c:#ec5f67:#81a764:#fec254:#5486c0:#bf83c1:#57c2c1:#efece7:#555555:#ff6973:#93d493:#ffd256:#4d84d1:#ff55ff:#83e9e4:#ffffff"
+    use_system_font = False
+  [[Seti]]
+    allow_bold = False
+    icon_bell = False
+    background_color = "#111213"
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#e3bf21"
+    foreground_color = "#cacecd"
+    show_titlebar = False
+    palette = "#323232:#c22832:#8ec43d:#e0c64f:#43a5d5:#8b57b5:#8ec43d:#eeeeee:#323232:#c22832:#8ec43d:#e0c64f:#43a5d5:#8b57b5:#8ec43d:#ffffff"
+    use_system_font = False
+  [[IceStation]]
+    allow_bold = False
+    icon_bell = False
+    background_color = "#111213"
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#e3bf21"
+    foreground_color = "#cacecd"
+    show_titlebar = False
+    palette = "#241341:#0f011c:#1f82a5:#2b4a6d:#182f65:#4c9cc1:#1d31c3:#071ca2:#021e52:#0e5191:#565f6e:#75b9e4:#2b6694:#5a8bac:#5ea8d6:#463568"
+    use_system_font = False
+
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
+
+
+
+
