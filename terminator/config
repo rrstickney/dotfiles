@@ -66,6 +66,12 @@
     show_titlebar = False
     palette = "#241341:#0f011c:#1f82a5:#2b4a6d:#182f65:#4c9cc1:#1d31c3:#071ca2:#021e52:#0e5191:#565f6e:#75b9e4:#2b6694:#5a8bac:#5ea8d6:#463568"
     use_system_font = False
+  [[nord]]
+    background_color = "#2E3440"
+    cursor_color = "#D8DEE9"
+    foreground_color = "#D8DEE9"
+    palette =    "#3B4252:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#88C0D0:#E5E9F0:#4C566A:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#8FBCBB:#ECEFF4"
+
 
 [layouts]
   [[default]]
