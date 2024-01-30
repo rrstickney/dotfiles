@@ -1,1 +1,4 @@
-#Bash Aliases
+## Export all the things!
+
+export PATH=$PATH:$HOME/.tfenv/bin:$HOME/.local/bin
+export PATH=$PATH:~/.spicetify

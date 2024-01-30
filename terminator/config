@@ -3,18 +3,13 @@
 [keybindings]
 [profiles]
   [[default]]
-  [[Galaxy]]
-    icon_bell = False
-    background_color = "#1d2837"
-    cursor_bg_color = "#bbbbbb"
-    foreground_color = "#ffffff"
+    cursor_shape = underline
     show_titlebar = False
-    palette = "#000000:#f9555f:#21b089:#fef02a:#589df6:#944d95:#1f9ee7:#bbbbbb:#555555:#fa8c8f:#35bb9a:#ffff55:#589df6:#e75699:#3979bc:#ffffff"
-    use_system_font = False
   [[tokyonight]]
     icon_bell = False
     background_color = "#1a1b26"
     cursor_bg_color = "#c0caf5"
+    font = SpaceMono Nerd Font Propo 10
     foreground_color = "#c0caf5"
     show_titlebar = False
     palette = "#15161e:#f7768e:#9ece6a:#e0af68:#7aa2f7:#bb9af7:#7dcfff:#a9b1d6:#414868:#f7768e:#9ece6a:#e0af68:#7aa2f7:#bb9af7:#7dcfff:#c0caf5"
@@ -25,6 +20,7 @@
     background_color = "#222222"
     cursor_fg_color = "#000000"
     cursor_bg_color = "#bbbbbb"
+    font = SpaceMono Nerd Font Propo 10
     foreground_color = "#c9c6bc"
     show_titlebar = False
     palette = "#15171c:#b24a56:#92b477:#c6735a:#7c8fa5:#a5789e:#80cdcb:#b3b8c3:#555555:#ec5f67:#89e986:#fec254:#5486c0:#bf83c1:#58c2c1:#ffffff"
@@ -35,6 +31,7 @@
     background_color = "#222222"
     cursor_fg_color = "#000000"
     cursor_bg_color = "#bbbbbb"
+    font = SpaceMono Nerd Font Propo 10
     foreground_color = "#bdbaae"
     show_titlebar = False
     palette = "#15171c:#ec5f67:#81a764:#fec254:#5486c0:#bf83c1:#57c2c1:#efece7:#555555:#ff6973:#93d493:#ffd256:#4d84d1:#ff55ff:#83e9e4:#ffffff"
@@ -45,6 +42,7 @@
     background_color = "#111213"
     cursor_fg_color = "#000000"
     cursor_bg_color = "#e3bf21"
+    font = SpaceMono Nerd Font Propo 10
     foreground_color = "#cacecd"
     show_titlebar = False
     palette = "#323232:#c22832:#8ec43d:#e0c64f:#43a5d5:#8b57b5:#8ec43d:#eeeeee:#323232:#c22832:#8ec43d:#e0c64f:#43a5d5:#8b57b5:#8ec43d:#ffffff"
@@ -55,17 +53,30 @@
     background_color = "#111213"
     cursor_fg_color = "#000000"
     cursor_bg_color = "#e3bf21"
+    font = SpaceMono Nerd Font Propo 10
     foreground_color = "#cacecd"
     show_titlebar = False
     palette = "#241341:#0f011c:#1f82a5:#2b4a6d:#182f65:#4c9cc1:#1d31c3:#071ca2:#021e52:#0e5191:#565f6e:#75b9e4:#2b6694:#5a8bac:#5ea8d6:#463568"
     use_system_font = False
   [[Nord]]
-    background_color = "#2E3440"
-    background_darkness = 0.9
-    cursor_shape = underline
-    foreground_color = "#D8DEE9"
+    icon_bell = False
+    background_color = "#1d2837"
+    cursor_bg_color = "#bbbbbb"
+    font = SpaceMono Nerd Font Propo 10
+    foreground_color = "#ffffff"
     show_titlebar = False
-    palette = "#3b4252:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#88c0d0:#e5e9f0:#4c566a:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#8fbcbb:#eceff4"
+    scrollback_lines = 2500
+    palette = "#000000:#f9555f:#21b089:#fef02a:#589df6:#944d95:#1f9ee7:#bbbbbb:#555555:#fa8c8f:#35bb9a:#ffff55:#589df6:#e75699:#3979bc:#ffffff"
+    use_system_font = False
+  [[IceStationRichmond]]
+    icon_bell = False
+    background_color = "#454C55"
+    cursor_bg_color = "#AEC6CF"
+    font = SpaceMono Nerd Font Mono 10
+    foreground_color = "#C0C0C0"
+    show_titlebar = False
+    palette = "#454c55:#88b04b:#9c51b6:#f49ac2:#4169e1:#aec6cf:#99c1f1:#75b9e4:#606e74:#88b04b:#9c51b6:#f49ac2:#4169e1:#bfc1c2:#c0c0c0:#75b9e4"
+    use_system_font = False
 [layouts]
   [[default]]
     [[[child0]]]

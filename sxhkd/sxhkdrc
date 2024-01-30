@@ -1,17 +1,18 @@
-#
-# wm independent hotkeys
-#
-
 # terminal emulator
-super + Return
+super + enter 
 	terminator
-
+super + return
+	terminator
+ctrl + alt + t
+	terminator
 # firefox launcher
+super + w
+	firefox
 
 # program launcher
 super + @space
 	#dmenu_run
-    rofi -modi run,drun,window -show drun -show-icons -sidebar-mode 	
+	rofi -modi run,drun,window -show drun -show-icons -sidebar-mode 	
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -41,10 +42,6 @@ super + y
 super + g
 	bspc node -s biggest.window
 
-#
-# state/flags
-#
-
 # set the window state
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
@@ -53,9 +50,6 @@ super + {t,shift + t,s,f}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
-#
-# focus/swap
-#
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
@@ -68,10 +62,9 @@ super + {p,b,comma,period}
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
-
-# focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+# focus the next/previous desktop in the current monitor using arrow keys
+super + {Left,Right}
+    bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
 super + {grave,Tab}
