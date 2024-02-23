@@ -1,8 +1,9 @@
-# ~/.config/starship.toml
+ # ~/.config/starship.toml
 
+"$schema" = 'https://starship.rs/config-schema.json'
 add_newline = true
 command_timeout = 1000
-format = """$os$username$hostname$directory$git_branch$git_status"""
+format = """$os$username$hostname$directory$git_branch$git_status$aws"""
 
 # Drop ugly default prompt characters
 [character]
@@ -17,7 +18,7 @@ disabled = false
 
 [os.symbols]
 Windows = ''
-Ubuntu = ''
+Ubuntu = '' 
 
 # ---
 
@@ -73,25 +74,6 @@ deleted = ' '
 format = 'via [󱃾 $context\($namespace\)](bold purple) '
 disabled = false
 
-# ---
-
-[vagrant]
-disabled = true
-
-[docker_context]
-disabled = true
-
-[helm]
-disabled = true
-
-[python]
-disabled = true
-
-[nodejs]
-disabled = true
-
-[ruby]
-disabled = true
-
-[terraform]
-disabled = true
+# Shows aws region and 
+[aws]
+symbol = "  "
