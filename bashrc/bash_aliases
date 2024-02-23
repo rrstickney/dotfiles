@@ -6,11 +6,11 @@ alias l='ls -CF'
 
 #install updates and remove install file
 alias install_discord_update='latest_discord_deb=$(find ~/Downloads/firefox/ -maxdepth 1 -type f -name "discord*.deb" -printf "%T@ %p\n" | sort -n | tail -1 | awk "{print \$2}"); sudo dpkg -i "$latest_discord_deb"; rm -rf "$latest_discord_deb"'
-alias install_code_update='latest_code_deb=$(find ~/Downloads/firefox/ -maxdepth 1 -type f -name "code*.deb" -printf "%T@ %p\n" |sort -n |tail -1 |awk "{print \$2}"); sudo dpkg -i "$latest_code_deb"; rm -rf "$latest_code_deb'
+alias install_code_update='latest_code_deb=$(find ~/Downloads/firefox/ -maxdepth 1 -type f -name "code*.deb" -printf "%T@ %p\n" |sort -n |tail -1 |awk "{print \$2}"); sudo dpkg -i "$latest_code_deb"; rm -rf "$latest_code_deb"'
 
 #login to primary aws account and set profile
 alias saml2icestation="saml2aws login && export AWS_PROFILE=icestation"
 
 
 #git aliases
-alias branch_cleanup="git branch |grep -v " main$" |xargs git branch -D"
+alias branch_cleanup='git branch |grep -v " main$" |xargs git branch -D'
