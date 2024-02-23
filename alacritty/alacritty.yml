@@ -1,0 +1,45 @@
+# Fonts
+font:
+  normal:
+    family: "SpaceMono Nerd Font" # Ensure the font name is exactly as it appears on your system
+    style: Regular
+
+  bold:
+    family: "SpaceMono Nerd Font"
+    style: Bold
+
+  italic:
+    family: "SpaceMono Nerd Font"
+    style: Italic
+
+  bold_italic:
+    family: "SpaceMono Nerd Font"
+    style: Bold Italic
+
+colors:
+  # Default colors
+  primary:
+    background: "0x575759"
+    foreground: "0x0e16c0"
+
+  # Normal colors
+  normal:
+    black: "0xb3cee5"
+    red: "0x808080"
+    green: "0x0099cc"
+    yellow: "0x2b3f5c"
+    blue: "0x00ffff"
+    magenta: "0x006699"
+    cyan: "0x00f0ff"
+    white: "0x99cccc"
+
+  # Bright colors
+  bright:
+    black: "0xb3cee5"
+    red: "0x808080"
+    green: "0x0099cc"
+    yellow: "0x2b3f5c"
+    blue: "0x0066ff"
+    magenta: "0x006699"
+    cyan: "0x7dfdfe"
+    white: "0x99cccc"
