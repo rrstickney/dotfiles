@@ -11,13 +11,9 @@ alias install_code_update='latest_code_deb=$(find ~/Downloads/firefox/ -maxdepth
 #login to primary aws account and set profile
 alias saml2icestation="saml2aws login && export AWS_PROFILE=icestation"
 
-
 #git aliases
-<<<<<<< Updated upstream
 alias branch_cleanup="git branch |grep -v " main$" |xargs git branch -D"
-=======
-alias branch_cleanup='git branch |grep -v " main$" |xargs git branch -D'
 
 #use big headphones
 alias bigheadphones='pactl set-default-sink bluez_output.88_D0_39_38_ED_2C.1'
->>>>>>> Stashed changes
+
