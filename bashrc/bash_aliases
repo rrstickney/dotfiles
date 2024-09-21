@@ -18,4 +18,15 @@ alias branch_cleanup='git branch |grep -v " main$" |xargs git branch -D'
 alias bigheadphones="pactl set-default-sink bluez_output.88_D0_39_38_ED_2C.1"
 
 #since I can't figure out that it's terraform not terrafrom
-alias terrafrom="terraform" 
+alias terrafrom="terraform"
+
+#cleanup ssh fingerprints
+fingerprint-cleanup() {
+    if [ -z "$1" ]; then
+        echo "Usage: fingerprint_cleanup <hostname>"
+        return 1
+    fi
+    ssh-keygen -f ~/.ssh/known_hosts -R "$1"
+    echo "Removed SSH fingerprint for $1 from ~/.ssh/known_hosts."
+}
+
