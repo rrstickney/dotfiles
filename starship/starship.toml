@@ -1,16 +1,40 @@
-# ~/.config/starship.toml
+"$schema" = "https://starship.rs/config-schema.json"
 
-"$schema" = 'https://starship.rs/config-schema.json'
-add_newline = true
-command_timeout = 1000
-format = """$os$username$hostname$directory$git_branch$git_status$aws"""
+# colorscheme
+#
+# #2E3440
+# #3B4252
+# #434C5E
+# #4C566A
+# #D8DEE9
+# #E5E9F0
+# #ECEFF4
+# #8FBCBB
+# #88C0D0
+# #81A1C1
+# #5E81AC
+## #BF616A
+## #D08770
+## #EBCB8B
+## #A3BE8C
+## #B48EAD
 
-# Drop ugly default prompt characters
-[character]
-success_symbol = ''
-error_symbol = ''
+# ##$git_status\
+# [\uE0B0 ](fg:#81A1C1 bg:#2E3440)\
+# $aws\
+# $character\
 
-# ---
+
+format = """
+$os\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$time
+"""
+# system
 
 [os]
 format = '[$symbol](bold white) '   
@@ -19,80 +43,52 @@ disabled = false
 [os.symbols]
 Windows = ' '
 Ubuntu = ' '
-Pop = ' '
+Pop = '  '
 
-# ---
 
-# Shows the username
 [username]
-style_user = 'white bold'
-style_root = 'black bold'
-format = '[$user]($style) '
-disabled = false
 show_always = true
+style_user = "bg:#023e8a fg:#efefef"
+style_root = "bg:#023e8a fg:#f44336"
+format = "[ $user ]($style)"
 
-# Shows the hostname
 [hostname]
 ssh_only = false
-format = 'on [$hostname](bold blue) '
-disabled = false
+style = "bg:#0077b6 fg:#191919"
+format = "[](fg:#023e8a bg:#0077b6)[ $hostname ]($style)"
 
-# Shows current directory
 [directory]
-truncation_length = 1
-truncation_symbol = '…/'
-home_symbol = '󰋜 ~'
-read_only_style = '197'
-read_only = '  '
-format = 'at [$path]($style)[$read_only]($read_only_style) '
+style = "bg:#0096c7 fg:#191919"
+format = "[](fg:#0077b6 bg:#0096c7)[ $path ]($style)"
+truncate_to_repo = false
+home_symbol = '󱂶 '
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = '󱂶 '
 
-# Shows current git branch
+# git
+
 [git_branch]
-symbol = ' '
-format = 'via [$symbol$branch]($style)'
-# truncation_length = 4
-truncation_symbol = '…/'
-style = 'bold green'
+symbol = "\uE0A0"
+style = "bg:#00b4d8 fg:#141414"
+format = "[ ](bg:#00b4d8 fg:#0096c7)[ $symbol $branch ]($style)"
 
-# Shows current git status
-[git_status]
-format = '[$all_status$ahead_behind]($style) '
-style = 'bold green'
-conflicted = '🏳'
-up_to_date = ''
-untracked = ' '
-ahead = '⇡${count}'
-diverged = '⇕⇡${ahead_count}⇣${behind_count}'
-behind = '⇣${count}'
-stashed = ' '
-modified = ' '
-staged = '[++\($count\)](green)'
-deleted = ' '
-
-# Shows kubernetes context and namespace
-[kubernetes]
-format = 'via [󱃾 $context\($namespace\)](bold purple) '
+[git_metrics]
 disabled = false
 
-# ---
+[git_status]
+format = "(fg:#00b4d8 bg:#141414)[($all_status$ahead_behind)]($style)"
+style = "bg:#00b4d8 fg:#141414"
+conflicted = "🏳 $count "
+ahead = "⇡ $count "
+behind = "⇣ $count "
+diverged = " $count "
+modified = "פֿ $count "
+staged = '[++\($count\)] '
+renamed = " $count "
 
-[vagrant]
-disabled = true
-
-[docker_context]
-disabled = true
-
-[helm]
-disabled = true
-
-[python]
-disabled = true
-
-[nodejs]
-disabled = true
-
-[ruby]
-disabled = true
-
-[terraform]
-disabled = true
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#ade8f4 fg:#191919"
+format = "[ ](fg:#00b4d8 bg:#ade8f4)[  $time ]($style)[ ](fg:#ade8f4)"
