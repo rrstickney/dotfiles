@@ -37,13 +37,14 @@ $time
 # system
 
 [os]
-format = '[$symbol](bold white) '   
+style = "bg:#023e8a fg:#efefef"
+format = '[$symbol]($style)'   
 disabled = false
 
 [os.symbols]
 Windows = ' '
 Ubuntu = ' '
-Pop = '  '
+Pop = ' '
 
 
 [username]
