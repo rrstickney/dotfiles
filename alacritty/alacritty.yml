@@ -47,4 +47,4 @@ selection:
   save_to_clipboard: true
 mouse:
   bindings:
-    - { mouse = "Right", mods = "Control", action = "Paste" }
+    - { mouse = "Right", action = "PasteSelection" }
