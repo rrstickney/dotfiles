@@ -21,12 +21,5 @@ alias bigheadphones="pactl set-default-sink bluez_output.88_D0_39_38_ED_2C.1"
 alias terrafrom="terraform"
 
 #cleanup ssh fingerprints
-fingerprint-cleanup() {
-    if [ -z "$1" ]; then
-        echo "Usage: fingerprint_cleanup <hostname>"
-        return 1
-    fi
-    ssh-keygen -f ~/.ssh/known_hosts -R "$1"
-    echo "Removed SSH fingerprint for $1 from ~/.ssh/known_hosts."
-}
 
+alias cleanup-dev-keys='for host in 192.168.7.46 192.168.7.99 192.168.7.108 apollo aquarius bepicolombo apollo.icestation.is aquarius.icestation.is bepicolombo.icestation.is; do ssh-keygen -R "$host"; done'
