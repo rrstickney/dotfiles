@@ -48,6 +48,10 @@ output * bg wallpaper.png fill
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+# Window gaps
+gaps inner 5
+gaps outer 5
+default_border pixel 1
 
 ### Input configuration
 #
@@ -115,6 +119,16 @@ output * bg wallpaper.png fill
 #
 # Workspaces:
 #
+
+    # Set default workspaces
+    set $ws1 "1"
+    set $ws2 "2"
+    set $ws3 "3"
+    set $ws4 "4"
+
+    # Scroll through workspaces
+    bindsym $mod+Ctrl+Down workspace next
+    bindsym $mod+Ctrl+Up   workspace prev
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
