@@ -1,29 +1,18 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
-# colorscheme
-#
-# #2E3440
-# #3B4252
-# #434C5E
-# #4C566A
-# #D8DEE9
-# #E5E9F0
-# #ECEFF4
-# #8FBCBB
-# #88C0D0
-# #81A1C1
-# #5E81AC
-## #BF616A
-## #D08770
-## #EBCB8B
-## #A3BE8C
-## #B48EAD
-
-# ##$git_status\
-# [\uE0B0 ](fg:#81A1C1 bg:#2E3440)\
-# $aws\
-# $character\
-
+# Midnight Glacial (Dark Nord) palette
+# Base
+# bg-deep    #2E3440
+# bg-1       #3B4252
+# bg-2       #434C5E
+# bg-3       #4C566A
+# text       #ECEFF4
+# text-2     #E5E9F0
+# Accents
+# frost-1    #5E81AC
+# frost-2    #81A1C1
+# frost-3    #88C0D0
+# frost-4    #8FBCBB
 
 format = """
 $os\
@@ -34,62 +23,76 @@ $git_branch\
 $git_status\
 $time
 """
-# system
 
+# ─────────────────────────────────────────────────────────
+# OS
 [os]
-style = "bg:#023e8a fg:#efefef"
-format = '[$symbol]($style)'   
 disabled = false
+style = "bg:#3B4252 fg:#ECEFF4"
+format = '[$symbol]($style)'
 
 [os.symbols]
 Windows = ' '
-Ubuntu = ' '
-Pop = ' '
+Ubuntu  = ' '
+Pop     = ' '
 
-
+# ─────────────────────────────────────────────────────────
+# Username
 [username]
 show_always = true
-style_user = "bg:#023e8a fg:#efefef"
-style_root = "bg:#023e8a fg:#f44336"
-format = "[ $user ]($style)"
+style_user = "bg:#434C5E fg:#ECEFF4"
+style_root = "bg:#434C5E fg:#ECEFF4"
+format = "[]($style)[ $user ]($style)"
 
+# Hostname
 [hostname]
 ssh_only = false
-style = "bg:#0077b6 fg:#191919"
-format = "[](fg:#023e8a bg:#0077b6)[ $hostname ]($style)"
+style = "bg:#4C566A fg:#ECEFF4"
+format = "[](fg:#434C5E bg:#4C566A)[ $hostname ]($style)"
 
+# Directory
 [directory]
-style = "bg:#0096c7 fg:#191919"
-format = "[](fg:#0077b6 bg:#0096c7)[ $path ]($style)"
+style = "bg:#5E81AC fg:#ECEFF4"
+format = "[](fg:#4C566A bg:#5E81AC)[ $path ]($style)"
 truncate_to_repo = false
 home_symbol = '󱂶 '
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = '󱂶 '
 
-# git
-
+# ─────────────────────────────────────────────────────────
+# Git
 [git_branch]
 symbol = "\uE0A0"
-style = "bg:#00b4d8 fg:#141414"
-format = "[ ](bg:#00b4d8 fg:#0096c7)[ $symbol $branch ]($style)"
+style  = "bg:#81A1C1 fg:#2E3440"
+format = "[](fg:#5E81AC bg:#81A1C1)[ $symbol $branch ]($style)"
 
 [git_metrics]
 disabled = false
 
 [git_status]
-format = "(fg:#00b4d8 bg:#141414)[($all_status$ahead_behind)]($style)"
-style = "bg:#00b4d8 fg:#141414"
+style  = "bg:#88C0D0 fg:#2E3440"
+format = "[](fg:#81A1C1 bg:#88C0D0)[($all_status$ahead_behind)]($style)"
 conflicted = "🏳 $count "
-ahead = "⇡ $count "
-behind = "⇣ $count "
-diverged = " $count "
-modified = "פֿ $count "
-staged = '[++\($count\)] '
-renamed = " $count "
+ahead      = "⇡ $count "
+behind     = "⇣ $count "
+diverged   = " $count "
+modified   = "פֿ $count "
+staged     = '[++\($count\)] '
+renamed    = " $count "
 
+# ─────────────────────────────────────────────────────────
+# Time
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:#ade8f4 fg:#191919"
-format = "[ ](fg:#00b4d8 bg:#ade8f4)[  $time ]($style)[ ](fg:#ade8f4)"
+style  = "bg:#8FBCBB fg:#2E3440"
+format = "[](fg:#88C0D0 bg:#8FBCBB)[  $time ]($style)[](fg:#8FBCBB)"
+
+# ─────────────────────────────────────────────────────────
+# Optional: final prompt character styling
+[character]
+success_symbol = "[❯](fg:#ECEFF4)"
+error_symbol   = "[❯](fg:#ECEFF4)"
+vicmd_symbol   = "[❮](fg:#ECEFF4)"
+
