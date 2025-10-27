@@ -1,62 +1,62 @@
-[colors.bright]
-black = "0x4C566A"
-blue = "0x81A1C1"
-cyan = "0x8FBCBB"
-green = "0xA3BE8C"
-magenta = "0xB48EAD"
-red = "0xBF616A"
-white = "0xECEFF4"
-yellow = "0xEBCB8B"
-
-[colors.cursor]
-cursor = "#d8dee9"
-text = "#2e3440"
-
-[colors.normal]
-black = "0x3B4252"
-blue = "0x81A1C1"
-cyan = "0x88C0D0"
-green = "0xA3BE8C"
-magenta = "0xB48EAD"
-red = "0xBF616A"
-white = "0xE5E9F0"
-yellow = "0xEBCB8B"
+# Midnight Glacial Alacritty Theme
+# Custom dark Nord variant — balanced, cool, high-contrast.
 
 [colors.primary]
-background = "0x2E3440"
-foreground = "0xD8DEE9"
+background = "#2E3440"    # Deep slate blue-gray background
+foreground = "#ECEFF4"    # Bright text with crisp readability
 
-#[colors.search.footer_bar]
-#background = "#434c5e"
-#foreground = "#d8dee9"
+[colors.normal]
+black = "#3B4252"         # Slightly lighter than background
+red = "#BF616A"           # Frosted crimson
+green = "#A3BE8C"         # Subtle green for success indicators
+yellow = "#EBCB8B"        # Warm yellow accent
+blue = "#5E81AC"          # Muted blue for structure
+magenta = "#B48EAD"       # Soft purple tone
+cyan = "#88C0D0"          # Frosty cyan
+white = "#E5E9F0"         # Light neutral
 
-[colors.search.matches]
-background = "#88c0d0"
-foreground = "CellBackground"
+[colors.bright]
+black = "#4C566A"         # Brighter shadow gray
+red = "#BF616A"
+green = "#A3BE8C"
+yellow = "#EBCB8B"
+blue = "#81A1C1"
+magenta = "#B48EAD"
+cyan = "#8FBCBB"
+white = "#ECEFF4"
+
+[colors.cursor]
+cursor = "#88C0D0"
+text = "#2E3440"
 
 [colors.selection]
-background = "#4c566a"
-text = "CellForeground"
+background = "#434C5E"
+text = "#ECEFF4"
+
+[colors.search.matches]
+background = "#8FBCBB"
+foreground = "#2E3440"
 
 [colors.vi_mode_cursor]
-cursor = "#d8dee9"
-text = "#2e3440"
-
-[font.bold]
-family = "SpaceMono Nerd Font"
-style = "Bold"
-
-[font.bold_italic]
-family = "SpaceMono Nerd Font"
-style = "Bold Italic"
-
-[font.italic]
-family = "SpaceMono Nerd Font"
-style = "Italic"
+cursor = "#81A1C1"
+text = "#2E3440"
 
 [font.normal]
 family = "SpaceMono Nerd Font"
 style = "Regular"
 
-[selection]
-save_to_clipboard = true
+[font.bold]
+family = "SpaceMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "SpaceMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "SpaceMono Nerd Font"
+style = "Bold Italic"
+
+[window]
+opacity = 0.92            # Subtle trans
+
