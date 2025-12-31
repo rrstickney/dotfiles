@@ -1,4 +1,5 @@
 ## Export all the things!
 export EDITOR=vim
+export VISUAL=vim
 export PATH=$PATH:$HOME/.tfenv/bin:$HOME/.local/bin
 export PATH=$PATH:~/.spicetify
