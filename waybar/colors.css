@@ -1,0 +1,38 @@
+/* Midnight Glacial — Dark Text */
+
+/* ---- Base Colors ---- */
+@define-color bg-deep   #2E3440;
+@define-color bg-1      #3B4252;
+@define-color bg-2      #434C5E;
+@define-color bg-3      #4C566A;
+
+/* DARK text (used everywhere in style.css) */
+@define-color text      #2E3440;
+@define-color text-2    #3B4252;
+
+/* ---- Accent / Frost Colors ---- */
+@define-color frost-1   #5E81AC; /* primary */
+@define-color frost-2   #81A1C1; /* secondary */
+@define-color frost-3   #88C0D0; /* info */
+@define-color frost-4   #8FBCBB; /* success */
+
+/* ---- Semantic States ---- */
+@define-color good      #8FBCBB;
+@define-color info      #5E81AC;
+@define-color warning   #D08770;
+@define-color critical  #BF616A;
+
+/* ---- Waybar Aliases (plain text mode) ---- */
+@define-color bar-bg        transparent;
+
+/* Workspaces */
+@define-color ws-bg         transparent;
+@define-color ws-fg         @text;
+@define-color ws-active-fg  @frost-1;
+@define-color ws-urgent-fg  @critical;
+
+/* Tooltips (still readable) */
+@define-color tooltip-bg     @bg-2;
+@define-color tooltip-fg     #ECEFF4;
+@define-color tooltip-border @bg-3;
+

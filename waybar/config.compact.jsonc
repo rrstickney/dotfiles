@@ -1,0 +1,59 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "spacing": 6,
+
+  "modules-left": [
+    "sway/workspaces",
+    "cpu",
+    "memory",
+    "temperature"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "battery"
+  ],
+
+  "sway/workspaces": { "all-outputs": true, "format": "{name}" },
+
+  "cpu": { "interval": 2, "format": " {usage}%" },
+
+  "memory": { "interval": 2, "format": " {percentage}%" },
+
+  "temperature": {
+    "interval": 2,
+    "format": " {temperatureC}°",
+    "critical-threshold": 85
+  },
+
+  "clock": { "interval": 30, "format": "{:%b %e %H:%M}" },
+
+  "tray": { "icon-size": 16, "spacing": 6 },
+
+  "network": {
+    "interval": 2,
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": "󰈀 {ipaddr}",
+    "format-disconnected": "󰖪",
+    "tooltip": true
+  },
+
+  "pulseaudio": { "format": " {volume}%", "format-muted": "" },
+
+  "battery": {
+    "interval": 10,
+    "states": { "warning": 25, "critical": 10 },
+    "format": " {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%"
+  }
+}
+
