@@ -105,6 +105,8 @@ if [ -f ~/.bash_exports ]; then
     . ~/.bash_exports
 fi
 
+## Kuberenetes auto complete
+source <(kubectl completion bash)
 
 ## Use Starship ##
 eval "$(starship init bash)"
