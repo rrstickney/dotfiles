@@ -1,0 +1,124 @@
+/* Waybar style config
+ * -------------------
+ */
+
+/* colors */
+@import "colors.css";
+
+/* =========================
+ * Base / Defaults
+ * ========================= */
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  font-family: "SpaceMono Nerd Font", monospace;
+  font-size: 11pt;
+
+  color: @text;
+}
+
+/* Transparent bar */
+window#waybar {
+  background: @bar-bg;
+  border: none;
+  box-shadow: none;
+}
+
+/* Global spacing between modules */
+#waybar {
+  padding: 2px 8px;
+}
+
+/* =========================
+ * Plain text modules
+ * ========================= */
+#workspaces,
+#memory,
+#load,
+#cpu,
+#temperature,
+#clock,
+#tray,
+#bluetooth,
+#network,
+#pulseaudio,
+#battery {
+  background: transparent;
+  padding: 0 8px;
+  margin: 0;
+}
+
+/* =========================
+ * Workspaces
+ * ========================= */
+#workspaces button {
+  background: transparent;
+  color: @ws-fg;
+  padding: 0 6px;
+}
+
+#workspaces button.focused {
+  color: @frost-1;
+}
+
+#workspaces button.urgent {
+  color: @critical;
+}
+
+/* =========================
+ * State-based coloring
+ * ========================= */
+
+/* Temperature */
+#temperature.critical {
+  color: @critical;
+}
+
+/* Audio */
+#pulseaudio.muted {
+  color: @warning;
+}
+
+/* Network */
+#network.disconnected {
+  color: @warning;
+}
+
+/* Battery */
+#battery.warning {
+  color: @warning;
+}
+
+#battery.critical {
+  color: @critical;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @good;
+}
+
+/* =========================
+ * Tray
+ * ========================= */
+#tray > .passive {
+  opacity: 0.6;
+}
+
+#tray > .needs-attention {
+  color: @critical;
+}
+
+/* =========================
+ * Tooltip
+ * ========================= */
+tooltip {
+  background-color: @tooltip-bg;
+  color: @tooltip-fg;
+  border: 1px solid @tooltip-border;
+  border-radius: 6px;
+  padding: 6px;
+}
+
